@@ -7,5 +7,5 @@ Contains:</br>
 <li>PSKF.R - Main function for the Paige Saunders Kalman filter
 <li>InvChol.R - Inverse Cholesky decomposition (required for PSKF)
 <li>PSKF_Example.R - Simple implementation example
-<li<example_locs.txt - Example data used in PSKF_Example
+<li>example_locs.txt - Example data used in PSKF_Example
 </ul>
