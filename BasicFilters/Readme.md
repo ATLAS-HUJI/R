@@ -1,6 +1,6 @@
 <b>Example script for applying basic filters to ATLAS data</b></br>
 
-Contains:
+List of contents:
 <ul>
 <li>BASE_FILTER_EXAMPLE.R - Example script applying all filters to data from an sqlite file
 <li>MedFilt.R - Basic median filter forming medians over a defined time window
