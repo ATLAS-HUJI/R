@@ -1,5 +1,6 @@
-# calculate normalized mutual information
+# function to calculate normalized mutual information between two variables
 # input x and y have to be of equal length
+# code by Ingo Schiffner
 CalNMI <- function(x,y)
 {
   library(infotheo)
@@ -16,8 +17,8 @@ CalNMI <- function(x,y)
   
   HX <- -sum(PX*log(PX/dp))/dp
   HY <- -sum(PY*log(PY/dp))/dp
-  mi <- mutinformation(x,y) #function for Mutual Information from package infotheo
-  nmi <- mi/max(HX,HY)        # NMI Normalized MI
+  mi <- mutinformation(x,y)   # function for Mutual Information from package infotheo
+  nmi <- mi/max(HX,HY)        # normalized mutual information
   
   return(nmi)
 }

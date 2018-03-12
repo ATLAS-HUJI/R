@@ -1,5 +1,5 @@
 #function to determine steadiness over a set of x,y coordinates
-library(useful)
+#code by Ingo Schiffner
 CalStead <- function (x,y)
 {
   #remove na values

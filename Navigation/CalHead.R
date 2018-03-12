@@ -1,4 +1,5 @@
 #function to calculate heading over a set of x,y coordinates
+#code by Ingo Schiffner
 CalHead <- function (x,y)
 {
   #remove na values

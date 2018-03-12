@@ -1,7 +1,7 @@
 #function to determine track efficency over a set of x,y coordinates
+#code by Ingo Schiffner
 CalEff <- function (x,y)
 {
-  
   #remove na values
   x_n<-x[!is.na(x)]
   y_n<-y[!is.na(y)]

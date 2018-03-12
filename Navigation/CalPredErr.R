@@ -1,10 +1,13 @@
-#predict timeseries t2 using time series t1
+# function to predict timeseries t2 using time series t1
+# input are 2 N*M matrices containting M dimensional timeseries (without the time component)
+# t1 and t2 have to be sampled at the same rate 
+# code by Ingo Schiffner
 CalPredErr <- function(t1,t2) 
 { 
   t1<-as.matrix(t1)
   t2<-as.matrix(t2)
   p_err_mat <- matrix(data=NA, nrow = nrow(t1) , ncol = nrow(t2))
-  b_err_mat<- matrix(data=NA,, nrow = nrow(t1) , ncol = nrow(t2))
+  b_err_mat <- matrix(data=NA, nrow = nrow(t1) , ncol = nrow(t2))
   
   #loop through each point
   for (i in 1:nrow(t1))
