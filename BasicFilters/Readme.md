@@ -1,4 +1,4 @@
-<b>Example script for applying basic filters to ATLAS data</b></br>
+<b>Examples of basic filters for ATLAS data</b></br>
 
 List of contents:
 <ul>
