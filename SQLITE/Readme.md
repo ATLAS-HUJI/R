@@ -1,6 +1,6 @@
 <b>Example script for querying ATLAS SQLITE files as downloaded through Kamadata</b></br>
 
-Contains:
+List of Contents:
 <ul>
 <li>ATLAS_SQLite_BaseExample.R - Example script going through the use of the various sub functions and also explaining conversion to and from ATLASTimeStamp
 <li>ATLAS_SQLite_GetLoc - Queries all Localizations from a SQLITE file
