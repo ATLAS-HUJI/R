@@ -4,8 +4,11 @@ Converted to R by Ingo Schiffner 2017</br>
 
 Contains:</br>
 <ul>
-<li>PSKF.R - Main function for the Paige Saunders Kalman filter
 <li>InvChol.R - Inverse Cholesky decomposition (required for PSKF)
+<li>PSKF.R - Main function for the Paige Saunders Kalman filter
+<li>PSKFForATLAS.R - Wrapper function for the Paige Saunders Kalman filter
 <li>PSKF_Example.R - Simple implementation example
+<li>PSKF_SQLite_Example.R - Implementation using Sqlite data and the Wrapper function
 <li>example_locs.txt - Example data used in PSKF_Example
+<li>*.sqlite - Example tracks for PSKF_SQLite_Example
 </ul>
