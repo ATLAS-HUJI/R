@@ -48,17 +48,20 @@ PSKFForATLAS <- function (t_dat)
   
   # apply Kalman filter
   s_cov <- diag(SDIM)
-  estimates = PSKF(S, s_cov, O, observations)
+  estimates <- PSKF(S, s_cov, O, observations)
+  
   # store results to data frame 
+  kt <- matrix(NA,n,1)
   kx <- matrix(NA,n,1)
   ky <- matrix(NA,n,1)
   kstd <- matrix(NA,n,1)
   for (i in 1:n)
   {
-    kx[i] = estimates[[i]]$estimate[1];
-    ky[i] = estimates[[i]]$estimate[2];
-    kstd[i] = sqrt(norm(estimates[[i]]$estimateCov[1:2,1:2]))
+    kx[i] <- estimates[[i]]$estimate[1]
+    ky[i] <- estimates[[i]]$estimate[2]
+    kt[i] <- as.double(observations[[i]]$TIME)
+    kstd[i] <- sqrt(norm(estimates[[i]]$estimateCov[1:2,1:2]))
   }
-  kf_dat<-data.frame(X=kx,Y=ky,Std=kstd)
+  kf_dat<-data.frame(TIME=kt,X=kx,Y=ky,Std=kstd)
   return(kf_dat)
 }
