@@ -53,15 +53,21 @@ PSKFForATLAS <- function (t_dat)
   # store results to data frame 
   kt <- matrix(NA,n,1)
   kx <- matrix(NA,n,1)
+  kvarx <- matrix(NA,n,1)
   ky <- matrix(NA,n,1)
+  kvary <- matrix(NA,n,1)
+  kcovxy <- matrix(NA,n,1)
   kstd <- matrix(NA,n,1)
   for (i in 1:n)
   {
     kx[i] <- estimates[[i]]$estimate[1]
+    kvarx[i] <- estimates[[i]]$estimateCov[1,1]
     ky[i] <- estimates[[i]]$estimate[2]
+    kvary[i] <- estimates[[i]]$estimateCov[2,2]
+    kcovxy[i] <- estimates[[i]]$estimateCov[1,2]
     kt[i] <- as.double(observations[[i]]$TIME)
     kstd[i] <- sqrt(norm(estimates[[i]]$estimateCov[1:2,1:2]))
   }
-  kf_dat<-data.frame(TIME=kt,X=kx,Y=ky,Std=kstd)
+  kf_dat<-data.frame(TIME=kt,X=kx,Y=ky,Std=kstd,VARX=kvarx,VARY=kvary,COVXY=kcovxy,TYPE=type)
   return(kf_dat)
 }
