@@ -3,7 +3,7 @@
 
 List of contents:
 <ul>
-<li> AdpFixedPoint - Adaptive Fixed Point first passage algorithm for track segmentation ... coming soon
+<li> AdpFixedPoint - Adaptive Fixed Point first passage algorithm for track segmentation
 <li> BasicFilters - Set of basic filters (median, running median and speed filter)
 <li> Navigation - Set of basic functions to estimate navigational performance
 <li> Homerange - Example script to estimate home/utilization ranges using tlocoh
