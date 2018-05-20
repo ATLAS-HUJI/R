@@ -9,7 +9,9 @@ Contains:</br>
 <li>PSKFForATLAS.R - Wrapper function for the Paige Saunders Kalman filter
 <li>PSKF_Example.R - Simple implementation example
 <li>PSKF_SQLite_Example.R - Implementation using Sqlite data and the Wrapper function
-<li>PSKF_SQLite_RW_Example.R - Implementation using Sqlite data and the Wrapper function with a Running Window 
+<li>PSKF_SQLite_RW_Example.R - Implementation using Sqlite data and the Wrapper function with a Running Window
+<li>PSKF_SQLite_RW_TS_Example.R - Implementation using Sqlite data and the Wrapper function with a two stage Running Window
+<li>PSKF_SQLite_TS_Example.R - Implementation using Sqlite data and the Wrapper function with two filtering stages
 <li>example_locs.txt - Example data used in PSKF_Example
 <li>*.sqlite - Example tracks for PSKF_SQLite_Example
 </ul>
